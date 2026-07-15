@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+
+body{
+    background-color:#f4f4f4;
+    color:#333;
+}
+
+.nav1{
+    background-color:#004080;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.nav2 a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.nav2 a:hover{
+    color:yellow;
+}
+
+section{
+    padding:40px;
+}
+#Home{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color:white;
+}
+
+.profile-img img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:3px solid #004080;
+}
+
+.profile-p h1{
+    color:#004080;
+    margin:10px 0;
+}
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    background-color:#004080;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#0066cc;
+}
+
+
+#About{
+    background-color:#e8f0ff;
+}
+
+#About h1{
+    margin-bottom:15px;
+}
+
+#About p{
+    margin-bottom:10px;
+}
+.Skill-Skill{
+    list-style-type:square;
+    margin-left:25px;
+}
+
+.Skill-Skill li{
+    margin:10px 0;
+}
+#Project{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.Project-card1,
+.Project-card2,
+.Project-card3{
+    width:30%;
+    background-color:white;
+    border:1px solid #ccc;
+    padding:15px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+#Contact{
+    background-color:#e8f0ff;
+}
+
+#Contact a{
+    text-decoration:none;
+    color:#004080;
+}
+
+#Contact a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background-color:#004080;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.dark-mode{
+    background-color:#222;
+    color:white;
+}
+
+.dark-mode .nav1,
+.dark-mode footer{
+    background-color:#111;
+}
+.dark-mode #Home,
+.dark-mode #About,
+.dark-mode #Contact,
+.dark-mode .Project-card1,
+.dark-mode .Project-card2,
+.dark-mode .Project-card3{
+    background-color:#444;
+    color:white;
+}
+
+.dark-mode a{
+    color:#ffeb3b;
+}
+@media (max-width:768px){
+    .nav1{
+        flex-direction:column;
+    }
+    .nav2{
+        margin-top:10px;
+    }
+
+    .nav2 a{
+        display:block;
+        margin:8px 0;
+    }
+    #Home{
+        flex-direction:column;
+        text-align:center;
+    }
+    .Project-card1,
+    .Project-card2,
+    .Project-card3{
+        width:100%;
+    }
+    }
