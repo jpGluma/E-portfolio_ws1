@@ -3,76 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="nav1">
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEVd30SNMC8pSULwwGRa9JPqPm7HzgBYCUvpzYYismS6hnT5iJLF-7r-WS&s=10" alt="logo" class="logo">
-       <div class="nav2">
-         <nav>   
-          <a href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Skill">Skill</a>
-          <a href="#Project">Project</a>
-          <a href="#Contact">Contact</a>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEVd30SNMC8pSULwwGRa9JPqPm7HzgBYCUvpzYYismS6hnT5iJLF-7r-WS&s=10"
+             alt="Logo"
+             class="logo">
+
+        <nav class="nav2">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skill">Skills</a>
+            <a href="#Project">Projects</a>
+            <a href="#Contact">Contact</a>
         </nav>
-      </div>
     </header>
+
     <section id="Home">
         <div class="profile-img">
-            <img src="" alt="profile">
+            <img src="https://via.placeholder.com/300" alt="Profile">
         </div>
         <div class="profile-p">
             <p>Hello! I'm</p>
-            <h1>John Paul A. Gluma</h1>
-            <p> A student of holy child centeal colleges inc... BSIT-3 Student</p>
+            <h1 id="title">John Paul A. Gluma</h1>
+            <p>
+                BS Information Technology (BSIT-3) Student <br>
+                Holy Child Central Colleges Inc.
+            </p>
+            <br>
+            <button onclick="showInfo()">My Information</button>
+            <button onclick="toggleTheme()">🌞</button> Dark Mode</button>
+
         </div>
     </section>
     <section id="About">
         <h1>About Me</h1>
-        <p>This photo is not Avialable</p>
-        <p>I'm John Paul Gluma i'm 19 y/o from sitio aliwanay naci surallah south cotabato.</p>
+        <p>
+            I am John Paul A. Gluma, 19 years old, from Sitio Aliwanay,
+            Naci, Surallah, South Cotabato.
+        </p>
+        <p>
+            I am a BSIT-3 student  in holy child central colleges inc. I'm enjoys learning web development,
+            programming, and creating responsive websites.
+        </p>
     </section>
     <section id="Skill">
+        <h1>Skills</h1>
         <ul class="Skill-Skill">
-            <h1>Skills</h1>
-            <li>Microsoft Office</li>
-            <li>HTML</li>
-            <li>Cummunication Skill</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>Microsoft office</li>
+            <li>Communication skill</li>
         </ul>
     </section>
     <section id="Project">
         <div class="Project-card1">
-        <h1>Inventory System</h1>
-        <p>Simple Inventory System for Small businesses</p>
-        <p>('_')</p>
-        <p>html, css, js</p>
+            <h2>Inventory System</h2>
+            <p>
+                A simple inventory system for small businesses.
+            </p>
+            <p>html,css,js</p>
         </div>
         <div class="Project-card2">
-        <h1>Inventory System</h1>
-        <p>Simple Inventory System for Small businesses</p>
-        <p>('_')</p>
-        <p>html, css, js</p>
+            <h2>Travel Go</h2>
+            <p>
+                Mobile travel application prototype.
+            </p>
         </div>
         <div class="Project-card3">
-        <h1>Inventory System</h1>
-        <p>Simple Inventory System for Small businesses</p>
-        <p>('_')</p>
-        <p>html, css, js</p>
+            <h2>Portfolio Website</h2>
+            <p>
+                Personal portfolio website showcasing my skills and projects.
+            </p>
+            <p>html,css,js</p>
         </div>
+
     </section>
     <section id="Contact">
-        <a href="Email">johnpaulaltillero@gmail.com</a> <br>
-        <a href="Number">09261157534</a> <br>
-        <a href="Facebook">John Paul A. Gluma</a>
+
+        <h1>Contact Me</h1>
+
+        <a href="mailto:johnpaulaltillero@gmail.com">
+             johnpaulaltillero@gmail.com
+        </a>
+
+        <br><br>
+
+        <a href="tel:+639261157534">
+             09261157534
+        </a>
+        <br><br>
+        <a href="https://facebook.com/" target="_blank">
+            Facebook: John Paul A. Gluma
+        </a>
     </section>
-
-<footer>
-<p>@2026 John Paul. All Rights Reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 John Paul A. Gluma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
