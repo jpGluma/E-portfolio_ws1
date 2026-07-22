@@ -3,6 +3,8 @@
     padding:0;
     box-sizing:border-box;
     font-family:Arial, sans-serif;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 
@@ -10,6 +12,12 @@
 body{
     background-color:#f4f4f4;
     color:#333;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
 }
 
 .nav1{
@@ -20,22 +28,18 @@ body{
     align-items:center;
     padding:15px 30px;
 }
-
-.logo{
-    width:60px;
-    height:60px;
-    border-radius:50%;
+.nav2 a:hover{
+    color:yellow;
+   
 }
 
 .nav2 a{
     color:white;
     text-decoration:none;
     margin-left:20px;
+
 }
 
-.nav2 a:hover{
-    color:yellow;
-}
 
 section{
     padding:40px;
@@ -65,6 +69,7 @@ button{
     color:white;
     border:none;
     cursor:pointer;
+    border-radius: 8px;
 }
 
 button:hover{
@@ -84,13 +89,15 @@ button:hover{
     margin-bottom:10px;
 }
 .Skill-Skill{
-    list-style-type:square;
+    list-style-type: square;
     margin-left:25px;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: space-between;
+    justify-items: center;
+  
 }
 
-.Skill-Skill li{
-    margin:10px 0;
-}
 #Project{
     display:flex;
     justify-content:space-between;
@@ -106,6 +113,8 @@ button:hover{
     padding:15px;
     margin-bottom:20px;
     text-align:center;
+    border-radius: 8px;
+    border:shad;
 }
 
 #Contact{
