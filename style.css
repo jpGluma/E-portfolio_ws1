@@ -4,14 +4,15 @@
     box-sizing:border-box;
     font-family:Arial, sans-serif;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 
 
 body{
-    background-color:#f4f4f4;
+    background-color:#cecccc;
     color:#333;
+    padding-bottom: 20px;
 }
 
 .logo{
@@ -21,7 +22,7 @@ body{
 }
 
 .nav1{
-    background-color:#004080;
+    background-color: blue;
     color:white;
     display:flex;
     justify-content:space-between;
@@ -29,7 +30,7 @@ body{
     padding:15px 30px;
 }
 .nav2 a:hover{
-    color:yellow;
+    color: skyblue;
    
 }
 
@@ -48,7 +49,7 @@ section{
     display:flex;
     align-items:center;
     justify-content:space-around;
-    background-color:white;
+    background-color:skyblue;
 }
 
 .profile-img img{
@@ -59,7 +60,7 @@ section{
 }
 
 .profile-p h1{
-    color:#004080;
+    color: rgb(34, 34, 176);
     margin:10px 0;
 }
 button{
@@ -73,12 +74,12 @@ button{
 }
 
 button:hover{
-    background-color:#0066cc;
+    background-color:#cecccc;
 }
 
 
 #About{
-    background-color:#e8f0ff;
+    background-color:#cecccc;
 }
 
 #About h1{
@@ -88,28 +89,40 @@ button:hover{
 #About p{
     margin-bottom:10px;
 }
-.Skill-Skill{
-    list-style-type: square;
-    margin-left:25px;
-    padding: 10px;
+
+.Skill1,
+.Skill2,
+.Skill3,
+.Skill4,
+.Skill5 {
+    width:30%;
+    background-color: gray;
+    border:1px solid gray;
+    padding:15px;
+    margin-bottom:20px;
+    text-align:center;
     border-radius: 8px;
+    border:shad;
     justify-content: space-between;
-    justify-items: center;
-  
+    text-wrap: wrap;
+    display: inline-table;
+
+    
 }
 
 #Project{
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
+
 }
 
 .Project-card1,
 .Project-card2,
 .Project-card3{
     width:30%;
-    background-color:white;
-    border:1px solid #ccc;
+    background-color: gray;
+    border:1px solid gray;
     padding:15px;
     margin-bottom:20px;
     text-align:center;
@@ -118,7 +131,7 @@ button:hover{
 }
 
 #Contact{
-    background-color:#e8f0ff;
+    background-color:gray;
 }
 
 #Contact a{
@@ -131,8 +144,8 @@ button:hover{
 }
 
 footer{
-    background-color:#004080;
-    color:white;
+    background-color:#a7abaf;
+    color: white;
     text-align:center;
     padding:15px;
 }
@@ -144,7 +157,7 @@ footer{
 
 .dark-mode .nav1,
 .dark-mode footer{
-    background-color:#111;
+    background-color:#222;
 }
 .dark-mode #Home,
 .dark-mode #About,
@@ -152,12 +165,12 @@ footer{
 .dark-mode .Project-card1,
 .dark-mode .Project-card2,
 .dark-mode .Project-card3{
-    background-color:#444;
-    color:white;
+    background-color:#b1b1b1;
+    color: white;
 }
 
 .dark-mode a{
-    color:#ffeb3b;
+    color:#fbfbf8;
 }
 @media (max-width:768px){
     .nav1{
@@ -179,5 +192,7 @@ footer{
     .Project-card2,
     .Project-card3{
         width:100%;
+        color: white;
+        background-color: white;
     }
     }
